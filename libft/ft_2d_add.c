@@ -6,7 +6,7 @@
 /*   By: jmeruma <jmeruma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/22 13:45:17 by jmeruma           #+#    #+#             */
-/*   Updated: 2023/03/22 14:46:57 by jmeruma          ###   ########.fr       */
+/*   Updated: 2023/04/11 13:27:55 by jmeruma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,9 @@ char	**ft_2d_add(char *arr[], char *str)
 			free_arr(new_arr, w_index - 1);
 		w_index++;
 	}
-	new_arr[w_index] = str;
+	new_arr[w_index] = ft_strdup(str);
+	if (new_arr[w_index] == NULL)
+		free_arr(new_arr, w_index - 1);
 	new_arr[w_index + 1] = NULL;
 	return (new_arr);
 }

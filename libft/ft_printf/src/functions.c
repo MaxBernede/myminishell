@@ -6,7 +6,7 @@
 /*   By: jmeruma <jmeruma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 14:41:07 by jmeruma           #+#    #+#             */
-/*   Updated: 2022/10/21 14:53:33 by jmeruma          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:58:58 by jmeruma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	printf_putnbr(va_list arglist)
 		nb *= -1;
 		len += putchar_util('-');
 	}
-	len += basetoa("0123456789", 10, nb);
+	len += put_basetoa("0123456789", 10, nb);
 	return (len);
 }
 
@@ -56,6 +56,6 @@ int	printf_unputnbr(va_list arglist)
 	unsigned int	nb;
 
 	nb = va_arg(arglist, unsigned int);
-	nb = basetoa("0123456789", 10, nb);
+	nb = put_basetoa("0123456789", 10, nb);
 	return (nb);
 }

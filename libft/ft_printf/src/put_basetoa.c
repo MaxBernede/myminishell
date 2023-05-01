@@ -6,7 +6,7 @@
 /*   By: jmeruma <jmeruma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 09:42:13 by jmeruma           #+#    #+#             */
-/*   Updated: 2022/10/24 11:34:35 by jmeruma          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:58:24 by jmeruma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	checks(unsigned long nb);
 char		*strcreation(unsigned long nb, int base);
 
-int	basetoa(const char *baseset, int base, unsigned long nb)
+int	put_basetoa(const char *baseset, int base, unsigned long nb)
 {
 	char	*ptr;
 	int		set;

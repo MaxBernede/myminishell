@@ -1,0 +1,1 @@
+FIXING ECHO WITH echo -n -n -nnn -n text

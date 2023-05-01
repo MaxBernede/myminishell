@@ -6,7 +6,7 @@
 /*   By: jmeruma <jmeruma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 12:48:49 by jmeruma           #+#    #+#             */
-/*   Updated: 2022/10/18 13:42:17 by jmeruma          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:59:41 by jmeruma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int				printf_putprecent(va_list arglist);
 
 int				putstr_util(const char *s);
 int				putchar_util(char c);
-int				basetoa(const char *baseset, int base, unsigned long nb);
+int				put_basetoa(const char *baseset, int base, unsigned long nb);
 
 #endif

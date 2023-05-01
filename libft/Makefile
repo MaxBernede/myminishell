@@ -48,8 +48,9 @@ SRC 	:=	ft_atoi.c 		\
 			ft_2dfree.c						\
 			ft_strjoin_free.c				\
 			ft_2d_add.c						\
+			ft_basetoa.c					\
 			\
-			ft_printf/src/basetoa.c			\
+			ft_printf/src/put_basetoa.c		\
 			ft_printf/src/ft_printf.c		\
 			ft_printf/src/functions.c		\
 			ft_printf/src/hexfunctions.c	\

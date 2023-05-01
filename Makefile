@@ -21,12 +21,13 @@ SRC 	:=	main.c			\
 			ifcmd.c			\
 			compare.c		\
 			ret_error.c		\
-			builtins/cmd_pwd.c \
-			builtins/cmd_env.c \
-			compare.c		\
-			parser/quotes_split.c	\
+			builtins/cmd_pwd.c 	\
+			builtins/cmd_env.c 	\
+			compare.c			\
 			parser/parser.c			\
 			parser/remove_quotes.c	\
+			parser/parse_command.c	\
+			parser/parse_redirect.c	\
 			builtins/cmd_cd.c 		\
 			builtins/cmd_unset.c	\
 			builtins/cmd_export.c	\
@@ -34,7 +35,17 @@ SRC 	:=	main.c			\
 			builtins/cmd_exit.c 	\
 			builtins/cmd_echo.c		\
 			parser/list_env.c 		\
-			signal/signal.c 
+			signal/signal.c 		\
+			parser/lexer/lexer.c	\
+			parser/lexer/list_lexer.c	\
+			parser/lexer/ft_islexer.c	\
+			parser/lexer/tokenizer.c	\
+			parser/lexer/lexer_cleanup.c\
+			parser/expander/expander.c 	\
+			parser/expander/exp_utils.c	\
+			redirects/here_doc.c		\
+			redirects/open.c			\
+			execution/execution.c 		\
 
 OBJ		:=	$(addprefix $(OBJ_DIR)/,$(SRC:.c=.o))
 SRC		:=	$(addprefix $(SRC_DIR)/,$(SRC))

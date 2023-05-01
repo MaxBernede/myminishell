@@ -6,7 +6,7 @@
 /*   By: jmeruma <jmeruma@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 15:05:51 by jmeruma           #+#    #+#             */
-/*   Updated: 2023/03/23 12:10:42 by jmeruma          ###   ########.fr       */
+/*   Updated: 2023/04/11 16:09:01 by jmeruma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int			ft_2d_arrlen(char **p_arr);
 int			ft_atoi_overflow(const char *str, int *numb);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 int			ft_strncmp(const char *s1, const char *s2, size_t n);
-int			basetoa(const char *baseset, int base, unsigned long nb);
+int			put_basetoa(const char *baseset, int base, unsigned long nb);
 long		ft_atol(const char *nb);
 char		*ft_itoa(int n);
 char		*ft_strdup(const char *s1);
@@ -50,6 +50,7 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		*ft_strjoin_free(char *s1, char const *s2);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char		*ft_basetoa(const char *baseset, int base, unsigned long nb);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void		ft_2dfree(char **p_arr);
 void		ft_putnbr_fd(int n, int fd);
